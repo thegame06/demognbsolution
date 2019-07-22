@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Demo" Class="GNBDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ni-cfl-IDBBN-1C;Initial Catalog=Demo;User ID=DEMO" SettingsObjectName="GNB.Infrastructure.Data.Properties.Settings" SettingsPropertyName="DemoConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.GetRates" Method="GetRates">
+    <ElementType Name="GetRatesResult">
+      <Column Name="Rates" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetTransactions" Method="GetTransactions">
+    <ElementType Name="GetTransactionsResult">
+      <Column Name="Transactions" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.InsRates" Method="InsRates">
+    <Parameter Name="Rates" Parameter="rates" Type="System.String" DbType="NVarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.InsTransactions" Method="InsTransactions">
+    <Parameter Name="Transactions" Parameter="transactions" Type="System.String" DbType="NVarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

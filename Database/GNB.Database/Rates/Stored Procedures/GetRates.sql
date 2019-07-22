@@ -1,0 +1,5 @@
+﻿CREATE PROCEDURE [dbo].[GetRates]
+AS
+BEGIN
+	SELECT Rates FROM dbo.Rate
+END

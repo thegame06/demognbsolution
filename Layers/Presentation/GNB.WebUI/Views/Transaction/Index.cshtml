@@ -1,0 +1,100 @@
+﻿@model GNB.ApplicationCore.DTOs.GetTransactionListDto
+
+@{
+    ViewBag.Title = "Transaction Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="">
+        <h2>Transacciones <span class="glyphicon glyphicon-random" aria-hidden="true"></span></h2>
+    </div>
+</div>
+
+<div class="row page-header">
+    <div class="">
+        <div class="col-md-4">
+
+            @using (Html.BeginForm("Index", "Transaction", FormMethod.Get, new { @class = "form-inline align-middle", @role = "search" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Ingrese un código SKU" name="SearchString" id="SKU" value="@ViewBag.SearchString">
+                </div>
+                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            }
+        </div>
+        <div class="col-md-5"></div>
+        <div class="col-md-3">
+            <h4 class="align-middle">@Html.DisplayNameFor(model => model.TotalAmount) @Html.DisplayFor(model => model.BaseCurrency) : @Html.DisplayFor(model => model.TotalAmount)</h4>
+        </div>
+    </div>
+</div>
+
+<div class="row page-header">
+    <div class="col-md-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">@Html.DisplayNameFor(model => model.TransactionList[0].SKU)</th>
+                    <th scope="col">@Html.DisplayNameFor(model => model.TransactionList[0].Amount)</th>
+                    <th scope="col">@Html.DisplayNameFor(model => model.TransactionList[0].Currency)</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @if (Model != null && Model.TransactionList.Any())
+                {
+                    foreach (var item in Model.TransactionList)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(model => item.SKU)</td>
+                            <td>@Html.DisplayFor(model => item.Amount)</td>
+                            <td>@Html.DisplayFor(model => item.Currency)</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    @if (Model != null && Model.TransactionList.Any())
+    {
+        <h3>
+            Total de transacciones : <span class="label label-default">@Model.TransactionList.Count</span>
+        </h3>
+    }
+</div>
+
+<div class="row">
+    @if (!ViewBag.Result.Successfully)
+    {
+
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            @ViewBag.Result.StatusCode : @ViewBag.Result.StatusDescription
+        </div>
+    }
+</div>
+
+
+
+
+
+
+
+
+
+

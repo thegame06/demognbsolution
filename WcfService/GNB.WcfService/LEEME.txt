@@ -1,0 +1,4 @@
+
+Deploy
+
+https://demognbwcf.azurewebsites.net/GNBService.svc

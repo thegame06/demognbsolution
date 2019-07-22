@@ -1,0 +1,104 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{ED1C0A76-9BD0-4CCC-99C4-1AD32DA7071A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{36B12D47-C640-4DBF-AA17-10F8C34762FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Layers", "Layers", "{A6079A67-35ED-49E6-ADF7-67EB94697CFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D1A973B1-6407-4E03-82ED-C5774851E348}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationCore", "ApplicationCore", "{A3CC2799-3DB1-47E5-8DAD-E024DEDCF450}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{B1C4DD67-F568-475B-A35A-B744991A05FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNB.Infrastructure.Common", "Layers\Infrastructure\GNB.Infrastructure.Common\GNB.Infrastructure.Common.csproj", "{7C381063-6613-469D-8582-7DF6CB1EA427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNB.Infrastructure.ServiceAgents", "Layers\Infrastructure\GNB.Infrastructure.ServiceAgents\GNB.Infrastructure.ServiceAgents.csproj", "{A4ABB86B-1911-4AEA-A228-53834781EE78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNB.Infrastructure.Data", "Layers\Infrastructure\GNB.Infrastructure.Data\GNB.Infrastructure.Data.csproj", "{DE5E7198-CC5C-433E-A339-889971D9AFAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WcfService", "WcfService", "{2CE5C0F0-1ED6-4591-AD6B-3871D88D4DD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNB.WcfService", "WcfService\GNB.WcfService\GNB.WcfService.csproj", "{C0DF1740-8030-4D50-B8CE-373D3AE3F932}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNB.WebUI", "Layers\Presentation\GNB.WebUI\GNB.WebUI.csproj", "{DB3347FF-036A-4DBE-A985-3BD34613A308}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNB.ApplicationCore", "Layers\ApplicationCore\GNB.ApplicationCore\GNB.ApplicationCore.csproj", "{6E7BB782-BA69-4A26-8035-B4AEA3CF2950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNB.UnitTests", "Tests\GNB.UnitTests\GNB.UnitTests.csproj", "{65FA7915-7465-48C5-854B-061B61AEA1E2}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GNB.Database", "Database\GNB.Database\GNB.Database.sqlproj", "{EA0A2A44-CB02-4546-A542-4F5B81AF299F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNB.IntegrationTests", "Tests\GNB.IntegrationTests\GNB.IntegrationTests.csproj", "{AC45C80B-6847-4180-A5F1-A8CCFBFF2BDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C381063-6613-469D-8582-7DF6CB1EA427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C381063-6613-469D-8582-7DF6CB1EA427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C381063-6613-469D-8582-7DF6CB1EA427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C381063-6613-469D-8582-7DF6CB1EA427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4ABB86B-1911-4AEA-A228-53834781EE78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4ABB86B-1911-4AEA-A228-53834781EE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4ABB86B-1911-4AEA-A228-53834781EE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4ABB86B-1911-4AEA-A228-53834781EE78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE5E7198-CC5C-433E-A339-889971D9AFAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE5E7198-CC5C-433E-A339-889971D9AFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE5E7198-CC5C-433E-A339-889971D9AFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE5E7198-CC5C-433E-A339-889971D9AFAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0DF1740-8030-4D50-B8CE-373D3AE3F932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0DF1740-8030-4D50-B8CE-373D3AE3F932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0DF1740-8030-4D50-B8CE-373D3AE3F932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0DF1740-8030-4D50-B8CE-373D3AE3F932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB3347FF-036A-4DBE-A985-3BD34613A308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB3347FF-036A-4DBE-A985-3BD34613A308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB3347FF-036A-4DBE-A985-3BD34613A308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB3347FF-036A-4DBE-A985-3BD34613A308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E7BB782-BA69-4A26-8035-B4AEA3CF2950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E7BB782-BA69-4A26-8035-B4AEA3CF2950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E7BB782-BA69-4A26-8035-B4AEA3CF2950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E7BB782-BA69-4A26-8035-B4AEA3CF2950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65FA7915-7465-48C5-854B-061B61AEA1E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FA7915-7465-48C5-854B-061B61AEA1E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FA7915-7465-48C5-854B-061B61AEA1E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FA7915-7465-48C5-854B-061B61AEA1E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA0A2A44-CB02-4546-A542-4F5B81AF299F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0A2A44-CB02-4546-A542-4F5B81AF299F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0A2A44-CB02-4546-A542-4F5B81AF299F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EA0A2A44-CB02-4546-A542-4F5B81AF299F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0A2A44-CB02-4546-A542-4F5B81AF299F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA0A2A44-CB02-4546-A542-4F5B81AF299F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AC45C80B-6847-4180-A5F1-A8CCFBFF2BDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC45C80B-6847-4180-A5F1-A8CCFBFF2BDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC45C80B-6847-4180-A5F1-A8CCFBFF2BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC45C80B-6847-4180-A5F1-A8CCFBFF2BDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D1A973B1-6407-4E03-82ED-C5774851E348} = {A6079A67-35ED-49E6-ADF7-67EB94697CFF}
+		{A3CC2799-3DB1-47E5-8DAD-E024DEDCF450} = {A6079A67-35ED-49E6-ADF7-67EB94697CFF}
+		{B1C4DD67-F568-475B-A35A-B744991A05FD} = {A6079A67-35ED-49E6-ADF7-67EB94697CFF}
+		{7C381063-6613-469D-8582-7DF6CB1EA427} = {D1A973B1-6407-4E03-82ED-C5774851E348}
+		{A4ABB86B-1911-4AEA-A228-53834781EE78} = {D1A973B1-6407-4E03-82ED-C5774851E348}
+		{DE5E7198-CC5C-433E-A339-889971D9AFAA} = {D1A973B1-6407-4E03-82ED-C5774851E348}
+		{C0DF1740-8030-4D50-B8CE-373D3AE3F932} = {2CE5C0F0-1ED6-4591-AD6B-3871D88D4DD1}
+		{DB3347FF-036A-4DBE-A985-3BD34613A308} = {B1C4DD67-F568-475B-A35A-B744991A05FD}
+		{6E7BB782-BA69-4A26-8035-B4AEA3CF2950} = {A3CC2799-3DB1-47E5-8DAD-E024DEDCF450}
+		{65FA7915-7465-48C5-854B-061B61AEA1E2} = {ED1C0A76-9BD0-4CCC-99C4-1AD32DA7071A}
+		{EA0A2A44-CB02-4546-A542-4F5B81AF299F} = {36B12D47-C640-4DBF-AA17-10F8C34762FF}
+		{AC45C80B-6847-4180-A5F1-A8CCFBFF2BDC} = {ED1C0A76-9BD0-4CCC-99C4-1AD32DA7071A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.ExceptionHandling.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.ExceptionHandling.Logging.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.Database.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.PolicyInjection.6.0.1304.0\lib\NET45
+		SolutionGuid = {9C78BDA2-2467-49F1-A2DF-B6068649B8E9}
+	EndGlobalSection
+EndGlobal
