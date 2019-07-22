@@ -117,8 +117,12 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy $(TargetDir)Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll $(SolutionDir)Layers\Presentation\GNB.WebUI\bin /Y</PostBuildEvent>
-  </PropertyGroup>  
+    <PostBuildEvent>copy $(TargetDir)Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll $(SolutionDir)Layers\Presentation\GNB.WebUI\bin /Y
+
+copy $(TargetDir)Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll $(SolutionDir)Tests\GNB.IntegrationTests\bin\Debug /Y
+
+copy $(TargetDir)Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll $(SolutionDir)Tests\GNB.UnitTests\bin\Debug /Y</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
